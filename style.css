@@ -1,0 +1,77 @@
+.game
+{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border-bottom: 8px solid #078307c5;
+    margin: auto;
+}
+
+
+
+#tails{
+    width: 70px;
+    height: 70px;
+    background-image: url(img/tails.gif);
+    background-size: 70px 70px;
+    position: relative;
+    top: 420px;
+}
+
+#tree{
+    width: 70px;
+    height: 100px;
+    background-image: url(img/tree.png);
+    background-size: 70px 100px;
+    position: relative;
+    top: 330px;
+    left: 950px;
+    animation: treeMove 2s infinite linear; }
+
+#moonorsun{
+    width: 100px;
+    height: 100px;
+    background-image: url("img/moon.png");
+    background-size: 100px 100px;
+    position: absolute;
+    top: 100px;
+    left: 900px;
+
+}
+#score {
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  right: 500px;
+}
+
+@keyframes treeMove {
+    0%{
+     left: 950px;
+     
+    }
+    100%{
+        left: -30px;
+    }
+}
+.jump {
+    animation: jump 1s linear;
+}
+@keyframes jump {
+    0% {
+        top: 420px;
+    }
+    30%{
+        top: 300px;
+    }
+    50%{
+        top: 200px;
+    }
+    80%{
+        top: 300px;
+    }
+    100% {
+        top:420px;
+    }
+}
